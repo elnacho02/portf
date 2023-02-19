@@ -11,8 +11,8 @@ export const sendEmail = async (data: {
   const { name, email, company, message } = data
 
   const emailToFrom = {
-    to: 'hey@olivercederborg.com',
-    from: 'hey@olivercederborg.com',
+    to: 'giulianapizzoo@gmail.com',
+    from: 'giulianapizzoo@gmail.com',
   }
 
   const content = {

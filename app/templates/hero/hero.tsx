@@ -5,6 +5,21 @@ import { HeroIllustration } from '~/components/hero-illustration'
 import { MotionLinkButton } from '~/components/link-button'
 
 export const Hero = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('CVGiulianaPizzo.pdf').then(response => {
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob)
+        // Setting various property values
+        let alink = document.createElement('a')
+        alink.href = fileURL
+        alink.download = 'CVGiulianaPizzo.pdf'
+        alink.click()
+      })
+    })
+  }
+
   return (
     <header
       id='intro'
@@ -64,6 +79,24 @@ export const Hero = () => {
           className='mt-8 inline-block md:mt-16'
         >
           Explore my projects
+        </MotionLinkButton>
+        <MotionLinkButton
+          to='assets/CVGiulianaPizzo.pdf'
+          download
+          target='_blank'
+          motionProps={{
+            variants: {
+              hidden: { opacity: 0, y: 50 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { ease: 'circOut', duration: 0.5 },
+              },
+            },
+          }}
+          className='mt-8 md:mt-16'
+        >
+          Download CV
         </MotionLinkButton>
 
         <HeroIllustration />

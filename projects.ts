@@ -11,7 +11,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 0,
-    name: 'Glow Skin Care',
+    name: 'Glow Skincare App',
     area: 'UX/UI Case Study',
     image: 'https://i.ibb.co/mD0GsbX/skin.jpg',
     imageAlt: 'Glow Skin Care',

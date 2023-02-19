@@ -28,7 +28,7 @@ import tailwind from '~/tailwind.css'
 export const links: LinksFunction = () => [
   {
     rel: 'icon',
-    href: '/assets/logo.svg',
+    href: 'https://cdn-icons-png.flaticon.com/512/9000/9000024.png',
     type: 'image/svg',
   },
   { rel: 'stylesheet', href: tailwind },

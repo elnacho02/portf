@@ -13,25 +13,16 @@ export const Footer = () => {
     >
       <section className='flex w-1/2 gap-8 md:gap-12 text-xl'>
         <motion.a
-          href='https://github.com/olivercederborg'
+          href='https://www.behance.net/giulianapizzo1?tracking_source=search_users|giuliana%20pizzo'
           target='_blank'
           rel='noreferrer'
           variants={footerItemVariants}
           className='nav-link text-xl text-dark-500'
         >
-          Github
+          Behance
         </motion.a>
         <motion.a
-          href='https://dribbble.com/oliver'
-          target='_blank'
-          rel='noreferrer'
-          variants={footerItemVariants}
-          className='nav-link text-xl text-dark-500'
-        >
-          Dribbble
-        </motion.a>
-        <motion.a
-          href='https://www.linkedin.com/in/olivercederborg/'
+          href='https://www.linkedin.com/in/giuliana-pizzo-826aa423a/'
           target='_blank'
           rel='noreferrer'
           variants={footerItemVariants}
@@ -40,13 +31,6 @@ export const Footer = () => {
           Linkedin
         </motion.a>
       </section>
-
-      <motion.p
-        variants={footerItemVariants}
-        className='font-light text-dark-300 dark:text-dark-400'
-      >
-        &copy; Oliver Cederborg
-      </motion.p>
     </motion.footer>
   )
 }

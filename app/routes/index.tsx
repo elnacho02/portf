@@ -96,9 +96,9 @@ export const action: ActionFunction = async ({ request }) => {
 }
 
 export const meta: MetaFunction = () => ({
-  title: 'Oliver Cederborg - Frontend developer',
+  title: 'Giuliana Pizzo - UX/UI Designer',
   description:
-    "I'm a 25 year old self-taught designer & frontend developer, focused on user experience, accessibility and modern web technologies.",
+    "I'm a full-time UX/UI Designer with a passion for great design and user experiences. ",
 })
 
 export default function Index() {
@@ -137,15 +137,10 @@ export default function Index() {
             ref={nameInputRef}
             name='name'
             label="What's your name?"
-            placeholder='Oliver Cederborg'
+            placeholder='Giuliana Pizzo'
             required
           />
-          <Input
-            name='email'
-            label='Where can I reach you?'
-            placeholder='hey@olivercederborg.com'
-            required
-          />
+          <Input name='email' label='Where can I reach you?' placeholder='hey@gmail.com' required />
           {/* Prevent bots from auto-filling and spamming. */}
           <label htmlFor='company' className='hidden'>
             What company do you work for?
@@ -159,7 +154,7 @@ export default function Index() {
           <Textarea
             name='message'
             label="What's your message?"
-            placeholder="Hi Oliver, let's work!"
+            placeholder="Hi Giuliana, let's work!"
             required
           />
           <SubmitButton>

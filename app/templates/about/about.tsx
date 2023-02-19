@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion'
 import { IoLogoFigma } from 'react-icons/io5'
 import {
+  SiAdobexd,
+  SiMiro,
   SiNeovim,
   SiNextdotjs,
   SiPrisma,
   SiReact,
+  SiSketch,
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
@@ -28,27 +31,9 @@ export const About = () => {
         exit='hidden'
         viewport={{ once: true }}
         className='relative mt-16 grid grid-cols-12 gap-y-10 md:ml-24 md:gap-x-8 lg:gap-x-16'
-      >
-        <AnimatedText
-          as='p'
-          className='col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
-          text='Get a brief look at who I am and what I do. If you would like to know more about me and my interests, you can.'
-        />
-        <MotionLinkButton
-          to='/about'
-          motionProps={{
-            variants: {
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
-            },
-          }}
-          className='col-span-full md:col-start-7 xl:col-start-9'
-        >
-          More about me
-        </MotionLinkButton>
-      </motion.section>
+      ></motion.section>
 
-      <section className='relative mt-24 flex grid-cols-12 flex-col-reverse gap-y-10 md:ml-24 md:grid md:gap-x-8 lg:gap-x-16'>
+      <section className='relative mt-10 flex grid-cols-12 flex-col-reverse gap-y-10 md:ml-24 md:grid md:gap-x-8 lg:gap-x-16'>
         <section className='col-span-full md:col-span-6 xl:col-span-8'>
           <motion.article
             variants={{
@@ -66,22 +51,23 @@ export const About = () => {
             />
             <AnimatedText
               as='p'
-              text="My name is Oliver Cederborg. I am 25 years old, I live in Copenhagen, Denmark, and I'm a self-taught designer and developer."
+              text='Hi, my name is Giuliana, and I am a 19-year-old aspiring UX/UI designer based in Tucumán, Argentina.'
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text='Digital design has been my main focus for many years, specifically UI/UX, but I have the past years shifted my focus to frontend development, which I have developed a great passion for.'
+              text='Despite my young age, I am passionate about creating user-centered digital products that not only look good but are also intuitive and functional. I am currently studying UX/UI advanced course and have been honing my skills through various personal projects and online courses.'
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text='I enjoy the constant change in the technologies used in the area and love diving into new frameworks and technologies.'
+              text='I am well-versed in design tools such as Figma, Sketch, and Adobe Experience. I have a keen eye for detail and a knack for solving complex problems with simple and elegant design solutions. I believe that design should not only meet user needs but also enhance their overall experience. I am constantly researching and staying up-to-date with the latest design trends and technologies to ensure that my work is both relevant and innovative. I am eager to collaborate with others and bring my creativity and passion to a dynamic team.'
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text='Spending time customizing, improving and tinkering with my work environment and tools is something I enjoy a lot, as it is something I use for many hours daily. It allows me to have it exactly as I desire. For instance, I use Neovim as my editor of choice, I have built multiple custom mechanical keyboards, and I use Colemak DHk as my keyboard layout.'
+              text='I am open to constructive criticism and always willing to learn and grow as a designer.
+              Please take a look at my portfolio to see some of my work and if you like what you see, I would love to hear from you! Thank you for considering me.'
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
           </motion.article>
@@ -112,13 +98,10 @@ export const About = () => {
               }}
               className='mt-6 flex flex-wrap gap-6 text-dark-300'
             >
-              <IoLogoFigma size={28} title='Figma' />
-              <SiNeovim size={28} title='Neovim' />
-              <SiTypescript size={28} title='TypeScript' />
-              <SiReact size={28} title='React.js' />
-              <SiNextdotjs size={28} title='Next.js' />
-              <SiTailwindcss size={28} title='TailwindCSS' />
-              <SiPrisma size={28} title='Prisma' />
+              <IoLogoFigma size={48} title='Figma' />
+              <SiSketch size={48} title='Sketch' />
+              <SiAdobexd size={48} title='AdobeXD' />
+              <SiMiro size={48} title='Miro' />
             </motion.div>
           </motion.section>
         </section>
@@ -153,8 +136,8 @@ export const About = () => {
                 transition: { duration: 0.5, ease: [0.6, 0.5, 0.5, 0.9] },
               },
             }}
-            src='/assets/olivercederborg-portrait.jpg'
-            alt='Portrait of Oliver Cederborg'
+            src='/assets/guilianapizzo.jpeg'
+            alt='Portrait of Giuliana Pizzo'
             height={400}
             width={400}
           />

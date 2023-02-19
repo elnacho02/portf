@@ -11,6 +11,8 @@ import { AnimatedText } from '~/components/animated-text'
 
 import type { Project } from '../../projects'
 
+import { LinkButton } from './link-button'
+
 type ProjectItemProps = ComponentPropsWithoutRef<'a'> & {
   project: Project
 }
@@ -30,8 +32,10 @@ export const ProjectItem = memo(({ project, ...props }: ProjectItemProps) => {
     []
   )
   return (
-    <Link
-      to={link}
+    <motion.a
+      target='_blank'
+      href={link}
+      rel='noreferrer'
       className={clsx(
         'col-span-12 flex flex-col md:col-span-6 xl:col-span-4',
         props.className && props.className
@@ -80,7 +84,7 @@ export const ProjectItem = memo(({ project, ...props }: ProjectItemProps) => {
           className='mt-3 text-3xl text-dark-400 dark:text-dark-200'
         />
       </motion.article>
-    </Link>
+    </motion.a>
   )
 })
 ProjectItem.displayName = 'ProjectItem'
